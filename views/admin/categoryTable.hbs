@@ -197,14 +197,8 @@
                                             <td>{{this.category}}</td>
                                            
                                             <td><a href="/admin/editCategory/{{this._id}}"><i class="bi bi-pencil-square"></i></a></td>
-                                            <td><a href="/admin/deleteCategory/{{this._id}}" onclick="alert('Are you sure you want to delete Category')"></a>><i class="bi bi-trash"></i></a></td>
-                                            {{!-- <td><a href="/admin/edit/{{this._id}}"><i class="bi bi-pencil-square"></i></a></td>
-                                            {{#if this.block}}
-                                          
-                                            <td><button class="btn btn-primary">blocked</button></td>
-                                            {{else}}
-                                              <td><button class="btn btn-success">active</button></td>
-                                            {{/if}} --}}
+                                            <td><a href="/admin/deleteCategory/{{this._id}}" onclick="alert('Are you sure you want to delete Category')"><i class="bi bi-trash"></i></a></td>
+                                        
                                         </tr>
                                    {{/each}}
                                  </tbody>

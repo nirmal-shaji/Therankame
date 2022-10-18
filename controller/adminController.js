@@ -446,7 +446,8 @@ module.exports = {
         try {
              if (req.body.productId == "null") {
         delete req.body.productId
-       }
+            }
+            console.log(req.body);
         req.body.image = req.file.filename;
         await bannerModel.create(req.body);
         res.redirect('/admin/bannerData');
@@ -475,6 +476,7 @@ module.exports = {
 
     editBanner: async(req, res, next) => {
         try {
+            console.log(req.body);
             if (req.file){
         imagePath= await bannerModel.findOne({ _id: req.params.id }, { _id: 0, image: 1 });
             fs.unlinkSync(path.join(__dirname, '..', 'public', 'images', 'bannerImages', imagePath.image));

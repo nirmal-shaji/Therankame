@@ -181,13 +181,13 @@
                                 <div class="mb-3">
                                     <label  class="form-label">Banner Heading</label>
                                     <input name="heading" type="text" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                        aria-describedby="emailHelp" required>
                                    
                                 </div>
                                     <div class="mb-3">
                                     <label  class="form-label">Banner Description</label>
                                     <input name="description" type="text" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                        aria-describedby="emailHelp" required>
                                    
                                 </div>
                               
@@ -203,26 +203,14 @@
                                
                                 </select>
                                 </div>
-                                 {{!-- <div class="mb-3">
-                                <label  class="form-label">Add Coupon</label>
-                                    
-                                <select name="couponId" class="form-select form-select mb-3" aria-label=".form-select-sm example">
-                                    
-                                {{#each couponData}}
-                                <option value="{{this._id}}">{{this.couponName}}</option>
-                                {{/each}}
-                               
-                                </div> --}}
+                                
                                
                                   <div class="mb-3">
                                 <label for="formFileMultiple" class="form-label">Product Images</label>
                                 <input name="image" class="form-control bg-dark" type="file" id="formFileMultiple" multiple>
                             </div>
                             
-                                {{!-- <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div> --}}
+                                
                                 <button type="submit" class="btn btn-primary">Create</button>
                             </form>
                         </div>
