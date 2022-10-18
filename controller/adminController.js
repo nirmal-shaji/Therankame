@@ -444,6 +444,7 @@ module.exports = {
     },
     addBanner: async(req, res, next) => {
         try {
+            console.log("inside controller")
              if (req.body.productId == "null") {
         delete req.body.productId
             }
@@ -452,6 +453,7 @@ module.exports = {
         await bannerModel.create(req.body);
         res.redirect('/admin/bannerData');
         } catch (error) {
+            console.log("err", error)
             next(error);
         }
        
