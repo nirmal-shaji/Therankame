@@ -30,7 +30,7 @@ const storages = multer.diskStorage({
         cb(null,uniqueSuffix + '-' +file.originalname   )
     }
 });
-console.log('multer reached');
+
 const uploads = multer({ storage: storages });
 
 

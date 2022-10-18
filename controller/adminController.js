@@ -444,7 +444,7 @@ module.exports = {
     },
     addBanner: async(req, res, next) => {
         try {
-            console.log("inside controller")
+            
              if (req.body.productId == "null") {
         delete req.body.productId
             }
