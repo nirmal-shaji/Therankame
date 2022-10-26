@@ -448,7 +448,7 @@ module.exports = {
              if (req.body.productId == "null") {
         delete req.body.productId
             }
-            console.log(req.body);
+         
         req.body.image = req.file.filename;
         await bannerModel.create(req.body);
         res.redirect('/admin/bannerData');

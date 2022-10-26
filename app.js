@@ -45,7 +45,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 const day=24*60*60*1000
 app.use(session({
-  secret: 'keyboard cat',
+  secret: process.env.SESSION_KEY,
   resave: false,
   saveUninitialized: true,
   cookie: { maxAge: day }
