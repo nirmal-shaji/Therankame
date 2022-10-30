@@ -34,7 +34,7 @@ module.exports={
             code: otpData
         }).then((verifications) => {
             
-            resolve(verifications.valid)
+            resolve(verifications.valid);
         });
     })
 }

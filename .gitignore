@@ -4,12 +4,12 @@
 
 
 # Ignoring images 
-/public/productUploads/
+./public/productUploads/
 
 
 
 # Ignore files related to installed npm packages
-/node_modules
+./node_modules
 
 # # Ignore files related to IDE and editors
 # /.idea
