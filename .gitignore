@@ -11,6 +11,8 @@
 # Ignore files related to installed npm packages
 /node_modules
 
+/public/images/bannerImages
+
 # # Ignore files related to IDE and editors
 # /.idea
 # .project
